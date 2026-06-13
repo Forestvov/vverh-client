@@ -12,6 +12,6 @@ dist-ssr
 __unconfig*
 todos.json
 .vscode
-.zed
+.zed/
 *storybook.log
 storybook-static
