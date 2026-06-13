@@ -1,0 +1,112 @@
+@theme {
+  --font-sans: 'GT Eesti Pro Display', ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-palette-white: #ffffff;
+
+  --color-palette-neutral-50: #f5f5f5;
+  --color-palette-neutral-200: #e5e5e5;
+  --color-palette-neutral-400: #a3a3a3;
+  --color-palette-neutral-500: #737373;
+  --color-palette-neutral-950: #171717;
+
+  --color-palette-frame: #9747ff;
+  --color-palette-ink: #2d2d2d;
+  --color-palette-icon: #313131;
+  --color-palette-text-muted: #756d8a;
+  --color-palette-icon-muted: #766e8a;
+
+  --color-palette-surface-50: #f9f9fb;
+  --color-palette-surface-100: #f1f2f8;
+  --color-palette-surface-150: #f1f0f4;
+  --color-palette-surface-disabled: #dbdbe1;
+
+  --color-palette-slate-700: #6c6c84;
+  --color-palette-slate-750: #474756;
+  --color-palette-slate-760: #464656;
+  --color-palette-slate-800: #454858;
+  --color-palette-slate-850: #383845;
+  --color-palette-slate-860: #373745;
+  --color-palette-slate-870: #373d46;
+  --color-palette-slate-900: #30323f;
+  --color-palette-slate-950: #2a2a34;
+
+  --color-palette-blue-600: #4342ff;
+
+  --color-palette-purple-100: #dfd0ff;
+  --color-palette-purple-150: #e1d3ff;
+  --color-palette-purple-300: #a578ff;
+  --color-palette-purple-350: #ae86ff;
+  --color-palette-purple-400: #9c69ff;
+  --color-palette-purple-500: #8445fe;
+  --color-palette-purple-550: #8157f8;
+  --color-palette-purple-600: #7229ff;
+  --color-palette-purple-650: #6c39fe;
+
+  --color-palette-red-100: #ffd4d3;
+  --color-palette-red-300: #ff8686;
+  --color-palette-red-400: #ff5555;
+  --color-palette-red-500: #ff3d3d;
+  --color-palette-red-550: #ff463d;
+
+  --color-palette-orange-100: #ffe4d0;
+  --color-palette-orange-300: #ffb078;
+  --color-palette-orange-400: #fe9a53;
+  --color-palette-orange-500: #fd8e3f;
+
+  --color-palette-coral-400: #fd847e;
+  --color-palette-yandex-red: #fc3f1d;
+
+  --spacing-button-lg-height: 62px;
+  --spacing-button-lg-x: 30px;
+  --spacing-button-md-height: 56px;
+  --spacing-button-md-x: 30px;
+  --spacing-button-sm-height: 50px;
+  --spacing-button-sm-x: 113px;
+  --spacing-button-icon-lg: 26px;
+  --spacing-button-icon-md: 22px;
+  --spacing-button-icon-sm: 20px;
+
+  --text-button-lg: 16px;
+  --text-button-lg--line-height: 18px;
+  --text-button-md: 16px;
+  --text-button-md--line-height: 17.6px;
+  --text-button-sm: 15px;
+  --text-button-sm--line-height: 18px;
+
+  --radius-*: initial;
+  --radius-sm: 14px;
+  --radius-md: 24px;
+  --radius-lg: 56px;
+}
+
+:root {
+  --radius: var(--radius-md);
+
+  --background: var(--color-palette-white);
+  --foreground: var(--color-palette-neutral-950);
+
+  --primary: var(--color-palette-neutral-950);
+  --primary-foreground: var(--color-palette-white);
+
+  --secondary: var(--color-palette-neutral-50);
+  --secondary-foreground: var(--color-palette-neutral-950);
+
+  --muted: var(--color-palette-neutral-50);
+  --muted-foreground: var(--color-palette-neutral-500);
+
+  --border: var(--color-palette-neutral-200);
+  --input: var(--color-palette-neutral-200);
+  --ring: var(--color-palette-neutral-400);
+}

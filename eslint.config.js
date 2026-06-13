@@ -1,9 +1,19 @@
-//  @ts-check
-
+import storybook from 'eslint-plugin-storybook'
 import { tanstackConfig } from '@tanstack/eslint-config'
 
 export default [
+  {
+    ignores: [
+      'eslint.config.js',
+      'prettier.config.js',
+      'storybook-static/**',
+      'dist/**',
+      'node_modules/**',
+    ],
+  },
+
   ...tanstackConfig,
+
   {
     rules: {
       'import/no-cycle': 'off',
@@ -14,7 +24,6 @@ export default [
       'pnpm/json-enforce-catalog': 'off',
     },
   },
-  {
-    ignores: ['eslint.config.js', 'prettier.config.js'],
-  },
+
+  ...storybook.configs['flat/recommended'],
 ]

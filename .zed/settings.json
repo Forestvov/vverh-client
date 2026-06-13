@@ -1,0 +1,15 @@
+{
+  "lsp": {
+    "tailwindcss-language-server": {
+      "settings": {
+        "classFunctions": ["cva", "cn", "clsx"],
+        "experimental": {
+          "configFile": "src/app/styles/app.css"
+        },
+        "lint": {
+          "suggestCanonicalClasses": "warning"
+        }
+      }
+    }
+  }
+}

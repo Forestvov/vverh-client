@@ -1,0 +1,120 @@
+.button-text-lg {
+  font-size: var(--text-button-lg);
+  line-height: var(--text-button-lg--line-height);
+}
+
+.button-text-md {
+  font-size: var(--text-button-md);
+  line-height: var(--text-button-md--line-height);
+}
+
+.button-text-sm {
+  font-size: var(--text-button-sm);
+  line-height: var(--text-button-sm--line-height);
+}
+
+.button-gradient-primary,
+.button-gradient-danger {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.button-gradient-primary::before,
+.button-gradient-primary::after,
+.button-gradient-danger::before,
+.button-gradient-danger::after {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  content: '';
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+.button-gradient-primary {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-palette-purple-650),
+    var(--color-palette-purple-550)
+  );
+}
+
+.button-gradient-primary::before {
+  background-image: linear-gradient(
+    233deg,
+    var(--color-palette-purple-500),
+    var(--color-palette-purple-300)
+  );
+}
+
+.button-gradient-primary::after {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-palette-purple-350),
+    var(--color-palette-purple-300)
+  );
+}
+
+.button-gradient-primary:hover:not(:disabled)::before,
+.button-gradient-danger:hover:not(:disabled)::before {
+  opacity: 1;
+}
+
+.button-gradient-primary:active:not(:disabled)::before,
+.button-gradient-danger:active:not(:disabled)::before {
+  opacity: 0;
+}
+
+.button-gradient-primary:active:not(:disabled)::after,
+.button-gradient-danger:active:not(:disabled)::after {
+  opacity: 1;
+}
+
+.button-gradient-primary:disabled,
+.button-gradient-danger:disabled {
+  color: rgb(255 255 255 / 40%);
+}
+
+.button-gradient-primary:disabled::after {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-palette-purple-150),
+    var(--color-palette-purple-100)
+  );
+  opacity: 1;
+}
+
+.button-gradient-danger {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-palette-red-500),
+    var(--color-palette-orange-500)
+  );
+}
+
+.button-gradient-danger::before {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-palette-red-400),
+    var(--color-palette-orange-400)
+  );
+}
+
+.button-gradient-danger::after {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-palette-red-300),
+    var(--color-palette-orange-300)
+  );
+}
+
+.button-gradient-danger:disabled::after {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-palette-red-100),
+    var(--color-palette-orange-100)
+  );
+  opacity: 1;
+}

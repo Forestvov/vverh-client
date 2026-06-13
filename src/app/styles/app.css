@@ -1,0 +1,7 @@
+@import './fonts.css';
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+
+@import './theme.css';
+@import './utilities.css';
+@import './globals.css';
