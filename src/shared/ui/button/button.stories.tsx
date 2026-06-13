@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/tanstack-react'
-import { Button } from './button'
-import { PlayIcon, YandexIcon } from './button-icons'
+import { Button, PlayIcon, YandexIcon } from '.'
 
 const meta = {
   title: 'Shared/Button',
